@@ -32,12 +32,13 @@ public class Exercise2 {
                     return true;
 
                 //Buscaremos el parentesis abierto, para eso iremos eliminando
-                  //las expresiones que estan en la pila hasta encontrarlo
-                while (stack.top() != '(') 
-                    stack.pop();
+                else{  //las expresiones que estan en la pila hasta encontrarlo
+                    while (stack.top() != '(') 
+                        stack.pop();
 
-                //Una vez encontrado el parentesis abierto, lo eliminamos
-                stack.pop(); 
+                    //Una vez encontrado el parentesis abierto, lo eliminamos
+                    stack.pop(); 
+                }
             }
         }
         //Luego del recorrido damos con que la expresión no tiene ningún duplicado
